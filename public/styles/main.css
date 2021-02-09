@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  padding-right: 0;
+  font-size: 0.75rem;
+  color: #333;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.main-nav {
+  color: #fff;
+  background: #403042;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding: 0 2rem 0 2rem;
+}
+
+.main-nav button,
+.main-nav a,
+.main-nav .user-name {
+  color: #fff;
+  background: #403042;
+  border: none;
+  padding: 0.2rem;
+  margin: 0;
+  margin-left: 0.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.user-nav {
+  position: relative;
+  right: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.header {
+  color: #333;
+  background: #4c394e;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+  height: 3rem;
+  align-items: center;
+}
+
+.cart-container {
+  background: #ff0072;
+  color: #ffffff;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.cart-container span {
+  padding: 0 0.7rem;
+}
+
+.total {
+  border-right: 0.1rem solid #f0f0f0;
+}
+
+.search-container {
+  width: 60vw;
+}
+input {
+  padding-left: 1rem;
+  height: 2rem;
+  width: 70%;
+}
+
+.logo {
+  height: 2.9rem;
+}
+
+.search-btn {
+  margin-left: 0.3rem;
+  height: 2rem;
+  border: 0;
+  background: #10bbd5;
+  border-radius: 0.6rem;
+  width: 25%;
+  color: #ffffff;
+}
+
+.home-icon {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  left: 2rem;
+}
+
+.search-btn:hover {
+  background: #29d5ef;
+  cursor: pointer;
+}
+
+.cart-container button {
+  background: none;
+  border: 0;
+  font-size: 1.8rem;
+  height: 3rem;
+  color: #ffffff;
+}
+
+button:focus {
+  outline: none;
+}
+
+.main-contact {
+  display: flex;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 2rem;
+  background: #fff;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.main-contact-header {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #f0f0f0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.book-item {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+.book-item .item-img {
+  max-width: 12rem;
+}
+
+.item-img img {
+  margin: 0 auto;
+  width: 144px;
+  height: 220px;
+  vertical-align: middle;
+  border: 0;
+}
+
+.book-item .item-info {
+  display: inline-block;
+  width: 100%;
+}
+
+.book-item h3 {
+  line-height: 1.25rem;
+  padding-top: 0.5rem;
+  height: 3rem;
+  max-width: 12rem;
+}
+
+.book-item h3,
+.book-item p {
+  margin: 0;
+  width: 100%;
+}
+
+h3 {
+  font-size: 0.875rem;
+}
+
+.book-item .author {
+  color: #4d4d4d;
+  height: 1.25rem;
+  max-width: 9.375rem;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  padding-top: 0.25rem;
+}
+
+.book-item p {
+  padding: 0;
+}
+
+.price-wrap {
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 0.5rem;
+}
+
+.book-item .price {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  padding-top: 0.5rem;
+  color: #ff0072;
+  width: 192px;
+}
+
+.book-btn {
+  line-height: 3.5rem;
+  height: 3.5rem;
+  background-color: #29d5ef;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.2rem auto;
+  display: block;
+  width: 192px;
+}
+.none {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .main-nav {
+    padding: 0.1rem;
+    height: 3rem;
+  }
+  .header {
+    margin: 0;
+    padding: 0.1rem;
+  }
+  .logo {
+    display: none;
+  }
+  .main-contact {
+    padding: 0;
+    margin: 0.3rem;
+  }
+
+  .mobile {
+    display: flex;
+  }
+  .cart-container {
+    position: absolute;
+    left: 0.2rem;
+    height: 3.5rem;
+  }
+
+  .no-mobil {
+    display: none;
+  }
+  .cart-container a {
+    background: #ff0072;
+  }
+
+  .search-container {
+    width: 95vw;
+    padding-left: 0.2rem;
+  }
+
+  .user-name {
+    display: none;
+  }
+}

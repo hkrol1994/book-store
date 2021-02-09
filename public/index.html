@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <div class="cart-container mobile">
+        <span id="total" class="total">0$</span>
+        <span id="amount" class="amount">0</span>
+        <a href="./pages/cart.html">
+          <button>
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </a>
+      </div>
+      <div class="user-nav">
+        <span class="user-name" id="user-name"></span>
+        <a href="./pages/log-in.html" id="log-in-a">
+          <button id="log-in-btn">
+            <i class="fas fa-user-circle"></i>
+            Sign in/Join
+          </button>
+        </a>
+        <a href="./pages/admin.html" id="admin-a" class="none">
+          <i class="fas fa-user-cog"></i>
+          Admin
+        </a>
+        <button id="log-out-btn" class="none">
+          <i class="fas fa-user-circle"></i>
+          Log-out
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <img
+        class="logo"
+        src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.19.35/img/logo.svg"
+        alt=""
+      />
+      <div class="search-container">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search for books by title / author / ISBN"
+        />
+        <button id="search-btn" class="search-btn">Search</button>
+      </div>
+      <div class="cart-container no-mobil">
+        <span id="total" class="total">0$</span>
+        <span id="amount" class="amount">0</span>
+        <a href="./pages/cart.html">
+          <button>
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="main-contact">
+      <div class="main-contact-header">
+        <h2 id="head-line">Our books</h2>
+      </div>
+      <div class="books-container" id="books-container"></div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

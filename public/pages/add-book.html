@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/add-book.css" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <a href="../index.html" class="home-icon">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="user-nav">
+        <span class="user-name" id="user-name"></span>
+        <a href="./log-in.html" id="log-in-a">
+          <button id="log-in-btn">
+            <i class="fas fa-user-circle"></i>
+            Sign in/Join
+          </button>
+        </a>
+        <a href="./admin.html" id="admin-a" class="none">
+          <i class="fas fa-user-cog"></i>
+          Admin
+        </a>
+        <button id="log-out-btn" class="none">
+          <i class="fas fa-user-circle"></i>
+          Log-out
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <img
+        class="logo"
+        src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.19.35/img/logo.svg"
+        alt=""
+      />
+    </div>
+    <h2 id="head-line">Add book</h2>
+    <form id="form">
+      <label>Book name:</label>
+      <input type="text" />
+      <label>Book img src:</label>
+      <input type="text" />
+      <label>Book format:</label>
+      <input type="text" />
+      <label>Book author:</label>
+      <input type="text" />
+      <label>Book language:</label>
+      <input type="text" />
+      <label>Book price:</label>
+      <input type="number" />
+      <label>Number of pages:</label>
+      <input type="number" />
+      <label>Book width:</label>
+      <input type="number" />
+      <label>Book height:</label>
+      <input type="number" />
+      <label>Book weight in grams:</label>
+      <input type="number" />
+      <label>Book publication date:</label>
+      <input type="date" />
+      <label>Book publisher:</label>
+      <input type="text" />
+      <label>Book publication city:</label>
+      <input type="text" />
+      <label>Book publication country:</label>
+      <input type="text" />
+      <label>Book ISBN10:</label>
+      <input type="text" />
+      <label>Book ISBN13:</label>
+      <input type="text" />
+      <label>Book bestsellers rank:</label>
+      <input type="number" />
+      <div></div>
+      <div></div>
+      <label>Book description1:</label>
+      <textarea cols="30" rows="10"></textarea>
+      <label>Book description2:</label>
+      <textarea cols="30" rows="10"></textarea>
+    </form>
+    <div class="submit-container">
+      <button id="submit">Add book</button>
+    </div>
+    <script type="module" src="../scripts/add-book.js"></script>
+  </body>
+</html>

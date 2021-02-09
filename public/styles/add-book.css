@@ -1,0 +1,42 @@
+form {
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+input,
+textarea {
+  margin: 0.3rem;
+  width: 25vw;
+}
+
+label {
+  font-weight: bold;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  line-height: 4.4rem;
+  height: 4.4rem;
+  padding: 0 1.7rem;
+  border: 0;
+  background: #10bbd5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.6rem;
+  min-width: 14rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: none;
+  font-size: 2rem;
+}

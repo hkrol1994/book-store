@@ -1,0 +1,152 @@
+.book-container {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.item-block {
+  width: 100%;
+  display: flex;
+}
+
+.item-img {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding: 1rem;
+  position: relative;
+  margin: 0;
+  background: #fff;
+  display: block;
+}
+
+.item-img-contant {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.book-img {
+  vertical-align: middle;
+  border: 0;
+}
+.item-info {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.item-info h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #f0f0f0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.meta-info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#format {
+  border-right: 0.1rem solid #f0f0f0;
+  padding: 0 1rem 0 0;
+}
+
+#language {
+  padding: 0 1rem 0 1rem;
+}
+.meta-info li {
+  position: relative;
+  display: inline-block;
+}
+
+.item-description {
+  margin-top: 1rem;
+}
+
+.item-tools {
+  display: flex;
+
+  margin: 0 0 0.5rem 1rem;
+}
+
+.price-and-btn {
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  position: relative;
+  height: fit-content;
+  background: #fff;
+  min-width: 25vw;
+}
+
+.price-info {
+  color: #ff0072;
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #f0f0f0;
+  font-size: 1.8rem;
+}
+
+.book-btn {
+  line-height: 4.4rem;
+  height: 4.4rem;
+  padding: 0 1.7rem;
+  border: 0;
+  margin: 0;
+  margin-top: 2rem;
+  background: #10bbd5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.6rem;
+  min-width: 14rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: none;
+  width: 100%;
+}
+.biblio-wrap {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background: #fff;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 10%);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.biblio-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.biblio-info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 2;
+  max-width: 80rem;
+}
+
+.biblio-info li {
+  line-height: 2rem;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}

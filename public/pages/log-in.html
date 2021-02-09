@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <a href="../index.html" class="home-icon">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="user-nav">
+        <a href="./pages/log-in.html" id="log-in-a">
+          <button id="log-in-btn">
+            <i class="fas fa-user-circle"></i>
+            Sign in/Join
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="header">
+      <img
+        class="logo"
+        src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.19.35/img/logo.svg"
+        alt=""
+      />
+    </div>
+    <div class="log-in" id="log-in">
+      <div class="sign-in">
+        <h3>Sign-in</h3>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button class="log-in-btn" id="sign-in-btn">Sign-in</button>
+      </div>
+      <div class="join">
+        <h3>Join</h3>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Your email address" />
+        <input type="password" placeholder="Create a password" />
+        <button class="log-in-btn" id="join-btn">Create your account</button>
+      </div>
+    </div>
+    <script type="module" src="../scripts/log-in.js"></script>
+  </body>
+</html>

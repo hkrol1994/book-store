@@ -1,0 +1,160 @@
+h1 {
+  padding: 2rem;
+  padding-bottom: 0;
+  text-decoration: underline;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contact-wrap {
+  padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.checkout-head-wrap {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 3rem;
+  justify-content: space-between;
+}
+.basket-msg {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+
+.basket-total {
+  font-weight: bold;
+}
+
+.checkout-btn {
+  min-width: 20rem;
+  width: auto;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+  height: 3rem;
+  padding: 0 1.7rem;
+  border: 0;
+  margin: 0;
+  background: #10bbd5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.basket-items-wrap {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+}
+
+.basket-header {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #f0f0f0;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 0.1rem solid #f0f0f0;
+}
+
+.item-img {
+  width: 11rem;
+  padding-right: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.item-info-wrap {
+  display: flex;
+}
+
+.item-info h2 {
+  margin-bottom: 1.5rem;
+}
+
+.format {
+  padding-right: 0.3rem;
+  font-size: 1rem;
+  border-right: solid #333 0.1rem;
+}
+
+.author,
+label {
+  font-size: 1rem;
+  padding: 0 0.2rem;
+}
+
+.price {
+  display: block;
+  margin-top: 0.3rem;
+  color: #ff0072;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+}
+
+input {
+  padding: 0.3rem;
+  width: fit-content;
+}
+
+.update-btn {
+  width: auto;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  height: 2rem;
+  padding: 0 1.7rem;
+  border: 0;
+  margin: 0;
+  background: #10bbd5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+.remove-btn {
+  height: 2.5rem;
+  color: #999;
+  min-width: 10rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+  background: none;
+  padding: 0;
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.6rem;
+}
+
+.item-checkout-info {
+  text-align: right;
+}
+
+.basket-totals-wrap {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  text-align: right;
+  color: #ff0072;
+  font-size: 2.5rem;
+}

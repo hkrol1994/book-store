@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/book.css" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <a href="../index.html" class="home-icon">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="user-nav">
+        <span class="user-name" id="user-name"></span>
+        <a href="./log-in.html" id="log-in-a">
+          <button id="log-in-btn">
+            <i class="fas fa-user-circle"></i>
+            Sign in/Join
+          </button>
+        </a>
+        <a href="./admin.html" id="admin-a" class="none">
+          <i class="fas fa-user-cog"></i>
+          Admin
+        </a>
+        <button id="log-out-btn" class="none">
+          <i class="fas fa-user-circle"></i>
+          Log-out
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <img
+        class="logo"
+        src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.19.35/img/logo.svg"
+        alt=""
+      />
+      <div class="cart-container">
+        <span id="total" class="total">0$</span>
+        <span id="amount" class="amount">0</span>
+        <a href="./cart.html">
+          <button>
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="book-container" id="book-container">
+      <div class="item-block">
+        <div class="item-img">
+          <div class="item-img-contant">
+            <img class="book-img" id="book-img" />
+          </div>
+        </div>
+        <div class="item-info">
+          <h1 id="name"></h1>
+          <ul class="meta-info">
+            <li id="format"></li>
+            <li id="language"></li>
+          </ul>
+          <div id="author-info"></div>
+          <div class="item-description" id="decs1"></div>
+          <div class="item-description" id="decs2"></div>
+        </div>
+        <div class="item-tools">
+          <div class="price-and-btn">
+            <div class="price-info" id="price"></div>
+            <button class="book-btn">Add to basket</button>
+          </div>
+        </div>
+      </div>
+      <div class="biblio-wrap">
+        <div class="biblio-info-wrap">
+          <h2 class="biblio-title">Product details</h2>
+          <ul class="biblio-info">
+            <li>
+              <label>Format:</label>
+              <span id="format-and-pages"> </span>
+            </li>
+            <li>
+              <label>Dimensions:</label>
+              <span id="dimensions"></span>
+            </li>
+            <li>
+              <label>Publication date:</label>
+              <span id="date"></span>
+            </li>
+            <li>
+              <label>Publisher:</label>
+              <span id="publisher"></span>
+            </li>
+            <li>
+              <label>Publication City/Country:</label>
+              <span id="publication-city"></span>
+            </li>
+            <li>
+              <label>Language:</label>
+              <span id="book-language"></span>
+            </li>
+            <li>
+              <label>ISBN10:</label>
+              <span id="ISBN10"></span>
+            </li>
+            <li>
+              <label>ISBN13:</label>
+              <span id="ISBN13"></span>
+            </li>
+            <li>
+              <label>Bestsellers rank:</label>
+              <span id="rank"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../scripts/book.js"></script>
+  </body>
+</html>

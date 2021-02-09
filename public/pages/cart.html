@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <a href="../index.html" class="home-icon">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="user-nav">
+        <span class="user-name" id="user-name"></span>
+        <a href="./log-in.html" id="log-in-a">
+          <button id="log-in-btn">
+            <i class="fas fa-user-circle"></i>
+            Sign in/Join
+          </button>
+        </a>
+        <a href="./admin.html" id="admin-a" class="none">
+          <i class="fas fa-user-cog"></i>
+          Admin
+        </a>
+        <button id="log-out-btn" class="none">
+          <i class="fas fa-user-circle"></i>
+          Log-out
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <img
+        class="logo"
+        src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.19.35/img/logo.svg"
+        alt=""
+      />
+      <div class="cart-container">
+        <span id="total" class="total">0$</span>
+        <span id="amount" class="amount">0</span>
+        <button>
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
+    <h1>Your basket</h1>
+    <div class="contact-wrap">
+      <div class="checkout-head-wrap">
+        <div class="basket-msg">
+          You have <span id="basket-amount"></span> items for a total of
+          <span id="basket-total" class="basket-total"></span> in your basket.
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+      <div class="basket-items-wrap">
+        <div class="basket-header">
+          <h2>Shopping basket details</h2>
+        </div>
+      </div>
+      <div class="basket-totals-wrap">
+        Total:
+        <span id="basket-total2"></span>
+        <br />
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+    <script type="module" src="../scripts/cart.js"></script>
+  </body>
+</html>
