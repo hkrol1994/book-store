@@ -150,3 +150,36 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+@media (max-width: 400px) {
+  .header {
+    display: none;
+  }
+
+  .main-nav {
+    height: 4rem;
+  }
+
+  .book-container {
+    padding: 0.2rem 0.4rem;
+  }
+  .item-block {
+    display: block;
+  }
+  .price-and-btn {
+    width: 100%;
+  }
+
+  .price-and-btn button {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .item-tools {
+    margin: 0;
+  }
+
+  .biblio-info {
+    columns: 1;
+  }
+}

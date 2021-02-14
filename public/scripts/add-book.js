@@ -5,7 +5,7 @@ const id = location.search.replace("?id=", "");
 const submitBtn = document.getElementById("submit");
 const headLine = document.getElementById("head-line");
 const form = document.getElementById("form");
-const token = localStorage.getItem("token");
+const token = localStorage.getItem("adminToken");
 
 const getData = () => {
   const data = {};

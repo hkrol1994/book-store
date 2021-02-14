@@ -38,9 +38,9 @@ const adminSchema = new mongoose.Schema({
 });
 
 adminSchema.pre("save", async function (next) {
-  const user = this;
-  if (user.isModified("password")) {
-    user.password = await bcrypt.hash(user.password, 8);
+  const admin = this;
+  if (admin.isModified("password")) {
+    admin.password = await bcrypt.hash(admin.password, 8);
   }
   next();
 });
@@ -62,7 +62,7 @@ adminSchema.methods.generateAuthToken = async function () {
   const admin = this;
   const token = jwt.sign(
     {
-      _id: user.id,
+      _id: admin.id,
     },
     process.env.TOKEN_SECRET,
     {

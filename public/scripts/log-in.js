@@ -61,7 +61,7 @@ signInBtn.addEventListener("click", (event) => {
   const data = {};
   data.email = event.target.parentElement.children[1].value;
   data.password = event.target.parentElement.children[2].value;
-  fetch("http://localhost:3000/users/login", {
+  fetch("http://localhost:3000/admin/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -78,14 +78,36 @@ signInBtn.addEventListener("click", (event) => {
     })
     .then((resObj) => {
       const token = resObj.token;
-      localStorage.setItem("token", token);
-      if (cart) {
-        updateUserCart();
-        localStorage.removeItem("cart");
-      }
+      localStorage.setItem("adminToken", token);
       window.location.href = `http://localhost:3000/index.html`;
     })
     .catch((err) => {
-      alert("Unable to sign in");
+      fetch("http://localhost:3000/users/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => {
+          if (res.ok) {
+            return res.json();
+          } else {
+            console.log(res);
+            throw new Error(res.status);
+          }
+        })
+        .then((resObj) => {
+          const token = resObj.token;
+          localStorage.setItem("token", token);
+          if (cart) {
+            updateUserCart();
+            localStorage.removeItem("cart");
+          }
+          window.location.href = `http://localhost:3000/index.html`;
+        })
+        .catch((err) => {
+          alert("Unable to sign in");
+        });
     });
 });

@@ -278,4 +278,18 @@ h3 {
   .user-name {
     display: none;
   }
+
+  .user-nav button {
+    height: 2.9rem;
+    font-size: 1.2rem;
+  }
+  .home-icon {
+    display: none;
+  }
+  .books-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
